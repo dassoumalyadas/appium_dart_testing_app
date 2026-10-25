@@ -1,0 +1,22 @@
+PODS:
+  - a_bridge (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+
+DEPENDENCIES:
+  - a_bridge (from `.symlinks/plugins/a_bridge/ios`)
+  - Flutter (from `Flutter`)
+
+EXTERNAL SOURCES:
+  a_bridge:
+    :path: ".symlinks/plugins/a_bridge/ios"
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  a_bridge: f7ad97079e92a71f40963361c683c33101194b96
+  Flutter: 71a624a5bc0c04062bf19101d501e466baf2fb47
+
+PODFILE CHECKSUM: 3ba3a73b1b12adcf321a227a745625fe0888cc82
+
+COCOAPODS: 1.17.0
