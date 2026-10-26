@@ -1,17 +1,46 @@
-# appium_testing_app
+# Appium Testing App (Flutter)
 
-A new Flutter project.
+A Flutter test automation target application featuring dedicated screens, standard widgets, and pre-configured `Key` identifiers for Appium mobile automation and Flutter testing.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📖 Automation Engineer's Guide
 
-A few resources to get you started if this is your first Flutter project:
+For full setup instructions, build steps, Appium Flutter Driver configurations, sample test scripts (Python/Java), and the locator cheat sheet:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+👉 **[Read the Full Automation Guide (AUTOMATION_GUIDE.md)](AUTOMATION_GUIDE.md)**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## ⚡ Quick Start
+
+### 1. Install Dependencies
+```bash
+flutter pub get
+```
+
+### 2. Run Local Tests (Unit & Widget)
+```bash
+flutter test
+```
+
+### 3. Build Debug APK (for Appium & Automation)
+```bash
+flutter build apk --debug
+```
+*Output APK located at: `build/app/outputs/flutter-apk/app-debug.apk`*
+
+### 4. Run App with Appium Flutter Server Listening
+```bash
+flutter run -t integration_test/appium_test.dart
+```
+
+---
+
+## 📱 Test Screens Included
+- **Login Form**: Text fields, validation, error states (`admin` / `password123`)
+- **Input Controls**: Switch, Checkbox, Slider, Dropdown, Counter increment/decrement
+- **Scrollable List**: ListView of 30 items with tap & long-press actions
+- **Dialogs & Alerts**: AlertDialog, SnackBar with undo action, BottomSheet, DatePicker
+- **Tabs & Swipe**: TabBar with swipeable tab views
+
